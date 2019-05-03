@@ -65,4 +65,5 @@ plot(g3, layout=layout.fruchterman.reingold, edge.arrow.size=0.1, vertex.color=w
 
 ```
 
+![friend]((https://icon.colorado.edu/#!/)"github")
 
