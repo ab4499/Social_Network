@@ -18,56 +18,23 @@ There is a dataset for each of these questions.
 
 Manipulate each of the data sets so that it is suitable for building a social network using iGraph.
 
-```{r}
-friend<-read.csv("best.friends.csv", header=TRUE)
-getOn<-read.csv("get.on.with.csv", header=TRUE)
-workWith<-read.csv("work.with.csv", header=TRUE)
-```
-
-```{r}
-# cleaning friend dataset
-f.EDGE<-count(friend, from, to)
-f.VERTEX<-unique(select(gather(friend, type, student, -gender.from, -layerID), 4))
-f.GNEDER<-unique(select(friend, 2,4))
-
-# cleaning friend getOn dataset
-g.EDGE<-count(getOn, from, to)
-g.VERTEX<-unique(select(gather(getOn, type, student, -layerID, -gender.from), 4))
-g.GNEDER<-unique(select(getOn, 2,4))
-
-# cleaning friend workWith dataset
-w.EDGE<-count(workWith, from, to)
-w.VERTEX<-unique(select(gather(workWith, type, student, -layerID, -gender.from), 4))
-w.GNEDER<-unique(select(workWith, 2,4))
-
-```
 
 #### Visualize the Networks
 
 Create a graph for each of the data sets. Visualize each of the graphs and color the nodes according to gender. Save pdfs of the graphs in this directory for upload to Github.
 
-```{r}
-# network for friend dataset
-g1<-graph.data.frame(f.EDGE, vertices=f.VERTEX, directed=TRUE)
-
-plot(g1, layout=layout.fruchterman.reingold, edge.arrow.size=0.1)
-plot(g1, layout=layout.circle,edge.arrow.size=0.3,vertex.color=f.GNEDER$gender.from)
-
-# network for getOn dataset
-g2<-graph.data.frame(g.EDGE, vertices=g.VERTEX, directed=TRUE)
-
-plot(g2, layout=layout.fruchterman.reingold, edge.arrow.size=0.1, vertex.color=g.GNEDER$gender.from)
-
-# network for getOn dataset
-g3<-graph.data.frame(w.EDGE, vertices=w.VERTEX, directed=TRUE)
-
-plot(g3, layout=layout.fruchterman.reingold, edge.arrow.size=0.1, vertex.color=w.GNEDER$gender.from)
-
-```
-
 
 ![friend](https://github.com/ab4499/Social_Network/blob/master/graphs/Friend.png "github") 
 ![friend2](https://github.com/ab4499/Social_Network/blob/master/graphs/Friend2.png "github")
+![geton](https://github.com/ab4499/Social_Network/blob/master/graphs/Geton.png "github") 
+![workwith](https://github.com/ab4499/Social_Network/blob/master/graphs/Workwith.png "github")
 
+#### Centrality Measures
 
+Who in the class has the highest degree centrality for each measure?
 
+![centrality](https://github.com/ab4499/Social_Network/blob/master/graphs/centrality.png "github")
+
+In friend dataset, the 8th student has the highest degree centrality 1.
+In getOn dataset, the 11th student has the highest degree centrality 1.
+In workWith dataset, the 14th student has the highest degree centrality 1.
