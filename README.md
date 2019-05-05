@@ -90,7 +90,7 @@ I would also want to know the accumulated centrality of students with the three 
 
 This did remind me of my middle school, where there are many small cliques, close circle among my classmates, and there are certain popular students who are close to many others. 
 
-Relevant Materials about Social Network Analysis:
+## Relevant Materials about Social Network Analysis:
 
 [Bakharia, A., & Dawson, S. (2011). SNAPP: A Bird’S-eye View of Temporal Participant Interaction. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 168–173). Banff, Alberta, Canada:ACM.](https://dl.acm.org/citation.cfm?doid=2090116.2090144)
 
