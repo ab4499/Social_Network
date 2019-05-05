@@ -66,7 +66,8 @@ plot(g3, layout=layout.fruchterman.reingold, edge.arrow.size=0.1, vertex.color=w
 ```
 
 <friend src="https://github.com/ab4499/Social_Network/blob/master/network%20for%20friend%20dataset.png" width="400" height="790">
-![friend]("https://github.com/ab4499/Social_Network/blob/master/network%20for%20friend%20dataset.png" width="400" height="790")
+![friend](https://github.com/ab4499/Social_Network/blob/master/network%20for%20friend%20dataset.png)
+ 
 ![friend2](https://github.com/ab4499/Social_Network/blob/master/network%20for%20friend%20dataset2.png "github")
 
 
