@@ -89,3 +89,15 @@ In general, no student is completely separated in any of the three networks, sho
 I would also want to know the accumulated centrality of students with the three layers together, and order the different layers (I would regard friendship as the closest relationship, and can work with as the second level, and get on well as the third level) to evaluation how students connect with each other on different level of layers. I would also like to distinguish the "from" and "to" in the network analysis to see who receive/send the most connection (degree in/degree out). 
 
 This did remind me of my middle school, where there are many small cliques, close circle among my classmates, and there are certain popular students who are close to many others. 
+
+Relevant Materials about Social Network Analysis:
+
+[Bakharia, A., & Dawson, S. (2011). SNAPP: A Bird’S-eye View of Temporal Participant Interaction. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 168–173). Banff, Alberta, Canada:ACM.](https://dl.acm.org/citation.cfm?doid=2090116.2090144)
+
+[Hanneman, R. & Riddle, M. (2005). Introduction to Social Network Methods. Riverside, CA: University of California, Riverside](http://faculty.ucr.edu/~hanneman/)
+
+[iGraph. (2016). Get Started with R iGraph](https://igraph.org/r/#docs)
+
+[Williams, N. (2014). Basics of Social Network Analysis.](https://www.youtube.com/watch?v=PT99WF1VEws)
+
+[Social Network Analysis with R - Examples](https://www.youtube.com/watch?v=0xsM0MbRPGE)
