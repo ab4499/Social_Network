@@ -54,27 +54,33 @@ Betweeness Cntrality cares how critical anode is to a network in its functioning
 #### Simple structures
 
 Count the number of dyads and the number and type of triads.
+
 [Documentation](http://igraph.org/r/doc/dyad_census.html)
+
 Within the existing connections, getOn has more mutual connections than the asymmetric connections. This indicates that when it comes to friendship and work partnership, there tend to be more asymmetric connections.
 
 [Documentation](http://igraph.org/r/doc/triad_census.html)
+
 A similar aspect in the triad metrics is that there are more complete graph (A<->B<->C, A<->C) in getOn set compared with two other groups.
 
 #### Cliques
 
 The following steps are done with [clique functions](http://igraph.org/r/doc/cliques.html)
+
 What is the size of the largest clique(s) in each of the three networks?
 ```{r}
 clique_num(g1)
 clique_num(g2)
 clique_num(g3)
 ```
+
 Find the cutpoints (articulation points) for each of the three networks. 
 ```{r}
 articulation_points(g1)
 articulation_points(g2)
 articulation_points(g3)
 ```
+Both friend and WorkWith network has 13 as the articulation point. This means that if we remove this point, the graph will become 2 separate components.
 
 #### Putting it all together
 
